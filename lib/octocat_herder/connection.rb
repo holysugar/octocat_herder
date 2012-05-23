@@ -124,7 +124,7 @@ class OctocatHerder
       query_string = query_string_from_params(query_params)
 
       request_options = options.merge(httparty_options)
-      if httparty_options.has_key?(:headers) and options.has_key(:headers)
+      if httparty_options.has_key?(:headers) and options.has_key?(:headers)
         request_options[:headers] = options[:headers].merge(httparty_options[:headers])
       end
 
